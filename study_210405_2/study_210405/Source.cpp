@@ -33,7 +33,7 @@ using namespace std;
 void main() {
 	/*
 	
-	while 문법
+	1. while 문법
 
 	int a= 0;
 	while (a < 5) {
@@ -49,7 +49,7 @@ void main() {
 
 
 	/*
-	do while 문법
+	2. do while 문법
 	
 	int a = 0;
 
@@ -64,15 +64,19 @@ void main() {
 	*/
 
 
+	int loop = 4;
+	while (loop<10) {
+		int innerLoop = 1;
+		printf("=====%d단==== \n\n", loop);
 
-
-
-
-
-
-
+		while (innerLoop <= 9) {
+			printf("%d * %d=%d\n", loop, innerLoop, loop * innerLoop);
+			innerLoop++;
+		}
+			loop += 4;
+		}
 	fgetc(stdin);
-}
+	}
 
 
 
